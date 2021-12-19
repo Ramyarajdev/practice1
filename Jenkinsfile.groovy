@@ -2,7 +2,14 @@ Pipeline {
   agent any
   stages {
     stage("A") {
-      echo "Hello world"
-    }
+      steps {
+        echo "Hello world"
+      }
+    } 
+    stage("B") {
+      steps {
+        echo "Welcome to Github"
+      } 
+    } 
   }
 }
